@@ -134,7 +134,7 @@ footer {
     /* text-align: start; */
 }
 
-footer p:nth-child(2) {
+#lastModified {
     color: yellowgreen;
     font-size: .8rem;
 }
