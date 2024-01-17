@@ -51,7 +51,10 @@ nav {
     background-color: var(--secondary-color);
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
 }
 
 header nav a {
@@ -72,8 +75,8 @@ main {
     margin-bottom: 100px;
 
     display: grid;
-    gap: 20px;
-    grid-template: 1fr / repeat(2, 1fr);
+    /* gap: 10px; */
+    grid-template: auto 1fr 1fr / 1fr;
 }
 
 main h2 {
@@ -103,12 +106,16 @@ main h2 {
 
 main section:nth-child(2) {
     height: 400px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    margin-bottom: 20px;
 }
 
 main section:nth-child(3) .container {
     display: grid;
     justify-items: center;
     align-items: center;
+    grid-column: 1 / 3;
 }
 
 main section:nth-child(3) .container p {
@@ -135,12 +142,12 @@ footer {
 }
 
 #lastModified {
-    color: yellowgreen;
+    color: white;
     font-size: .8rem;
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     main section {
         grid-column: 1 / 3;
     }
-}
+} */
