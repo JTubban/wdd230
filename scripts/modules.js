@@ -1,7 +1,6 @@
-export {getyear};
+export { getyear };
 
-function getyear()
-{
-    const currentDAte = new Date();
-    return currentDAte.getFullYear();
+function getyear() {
+  const currentDAte = new Date();
+  return currentDAte.getFullYear();
 }
