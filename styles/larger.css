@@ -24,3 +24,43 @@
         grid-column: 2 / 3;
     }
 }
+
+@media screen and (min-width: 37.5em) {
+    #menu {
+        display: none;
+    }
+
+
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 37.5em) {
+    .navigation a:hover {
+        background-color: white;
+        color: var(--primary-color);
+        width: 100%;
+    }
+
+    .navigation {
+        display: flex;
+        /* flex-direction: row; */
+        padding: 0;
+        margin: 0;
+    }
+}

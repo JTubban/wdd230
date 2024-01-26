@@ -33,14 +33,15 @@ body {
 header {
     grid-column: 1 / 4;
     background-color: var(--primary-color);
-    /* margin-bottom: 30px; */
 }
+
 header h1{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     color: white;
+    font-size: 1.8rem;
 }
 
 header h1 img {
@@ -57,15 +58,50 @@ nav {
     /* justify-content: space-around; */
 }
 
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    position: absolute;
+    background: none;
+    color: rgb(238, 229, 229);
+    top: 0;
+    right: 0;
+}
+
+#menu:hover {
+    cursor:pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    list-style: none;
+    /* background-color: #333; */
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.open a {
+    display: block;
+}
+
 header nav a {
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 600;
     color: white;
-}
-
-a:hover {
-    color: var(--primary-color);
 }
 /* main */
 main {
