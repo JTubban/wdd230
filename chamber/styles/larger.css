@@ -1,0 +1,30 @@
+@media screen and (min-width: 57.5em) {
+  footer {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+  }
+
+  .navigation a {
+    padding: 2rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .navigation {
+    flex-direction: row;
+  }
+
+  .navigation a {
+    display: block;
+    /* flex: 1 1 100%; */
+  }
+}
