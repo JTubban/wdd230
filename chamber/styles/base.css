@@ -89,6 +89,18 @@ main {
 }
 /* Hamburger navigation ends */
 
+/* Dark mode starts */
+#mode {
+    position: fixed;
+    right: 0;
+    top: 30px;
+}
+
+#mode:hover {
+    cursor: pointer;
+}
+/* Dark mode ends */
+
 .hero-image {
     background-image: url("../images/hero-img1.png");
     background-size: cover;
