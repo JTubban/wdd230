@@ -33,6 +33,10 @@ header {
 main {
     grid-column: 1/2;
     height: 1500px;
+
+    display: grid;
+    grid-template: 500px 300px / 1fr 1fr 1fr 1fr;
+    gap: 1rem;
 }
 
 /* Hamburger navigation starts */
@@ -131,12 +135,33 @@ main {
 .hero-text a:hover {
     color: gray;
 }
-
 /* Card style */
 .card {
     text-align: center;
     height: 20%;
+}
+
+.hero-image {
+    grid-column: 1/5;
+    height: 100%;
+}
+
+.card {
+    height: 100%;
     background-color: gray;
+    padding: 1rem;
+}
+
+.card:nth-child(2) {
+    grid-column: 1/5;
+}
+
+.card:nth-child(3) {
+    grid-column: 1/5;
+}
+
+.card:nth-child(4) {
+    grid-column: 1/5;
 }
 
 footer {
