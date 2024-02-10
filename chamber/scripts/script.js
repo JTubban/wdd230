@@ -38,7 +38,7 @@ modeButton.addEventListener("click", () => {
 			card.style.color = "#000";
 		});
 
-		heroText.style.background = "rgba(45, 45, 45, 0.8)";
+		heroText.style.background = "rgba(45, 45, 45, 0.9)";
 
 		header.style.background = "#1D3557";
 		header.style.color = "#000";

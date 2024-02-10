@@ -116,7 +116,7 @@ main {
 .hero-text {
     text-align: center;
     color: var(--accent2);
-    background-color:  gray;
+    background-color:  rgba(45, 45, 45, 0.9);
     padding: 2rem;
     border-radius: 5px;
 }
