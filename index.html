@@ -21,7 +21,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <h1><img src="images/me.png" alt="James Tubban">James C. Tubban</h1>
+            <h1><img src="images/me.webp" alt="James Tubban">James C. Tubban</h1>
             <button id="menu"></button>
             <nav class="navigation">
                 <a href="#" class="active">Home</a>
@@ -32,9 +32,16 @@
             </nav>
         </header>
     
-        <!-- <div id="temple-main">
-
-        </div> -->
+        <div id="temple-hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/temple-small.webp">
+                <source media="(max-width: 960px)" srcset="images/temple-medium.webp">
+                <img src="images/temple-larger.webp" width="1200" height="600" alt="Laie Temple">
+            </picture>
+            <div class="templelabel">
+                <p>Laie Temple</p>
+            </span>
+        </div>
 
         <main>
             <h2>WDD 230: Web Frontend Development</h2>
