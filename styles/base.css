@@ -141,11 +141,13 @@ main {
   grid-column: 1 / 4;
   justify-self: center;
   width: 100%;
-  margin-bottom: 100px;
 
   display: grid;
-  /* gap: 1rem; */
   grid-template: auto 1fr 1fr / 1fr;
+}
+
+main > * {
+    margin-bottom: 1rem;
 }
 
 main h2 {
@@ -159,7 +161,6 @@ main h2 {
 .card {
   border: solid 1px var(--primary-color);
   border-radius: 5px;
-  margin-bottom: 1rem;
 }
 
 .card ul li {
@@ -217,7 +218,6 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* text-align: start; */
 }
 
 #lastModified {
