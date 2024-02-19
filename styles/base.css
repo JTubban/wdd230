@@ -1,221 +1,226 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;300&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 :root {
-    --primary-color: #1D3557;
-    --secondary-color: #415A77;
-    --accent1: #778DA9;
-    --accent2: white;
+  --primary-color: #1d3557;
+  --secondary-color: #415a77;
+  --accent1: #778da9;
+  --accent2: white;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-ol, ul {
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
 body {
-    max-width: 1600px;
-    margin: 0 auto;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 /* wrapper */
 #wrapper {
-    display: grid;
-    grid-template: auto auto 1fr auto / auto 1fr auto;
+  display: grid;
+  grid-template: auto auto 1fr auto / auto 1fr auto;
 }
 /* header */
 header {
-    grid-column: 1 / 4;
-    background-color: var(--primary-color);
+  grid-column: 1 / 4;
+  background-color: var(--primary-color);
 }
 
-header h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    color: white;
-    font-size: 1.8rem;
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  font-size: 1.8rem;
 }
 
 header h1 img {
-    width: 200px;
+  width: 200px;
 }
 
 nav {
-    background-color: var(--secondary-color);
-    padding: 20px;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
 #menu {
-    font-size: 1.5rem;
-    border: 0;
-    position: absolute;
-    background: none;
-    color: rgb(238, 229, 229);
-    top: 0;
-    right: 0;
+  font-size: 1.5rem;
+  border: 0;
+  position: absolute;
+  background: none;
+  color: rgb(238, 229, 229);
+  top: 0;
+  right: 0;
 }
 
 #menu:hover {
-    cursor:pointer;
+  cursor: pointer;
 }
 
 #menu::before {
-    content: "☰";
+  content: "☰";
 }
 
 #menu.open::before {
-    content: "X";
+  content: "X";
 }
 
 .navigation {
-    list-style: none;
-    color: #fff;
+  list-style: none;
+  color: #fff;
 }
 
 .navigation a {
-    display: none;
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
 }
 
 .open a {
-    display: block;
+  display: block;
 }
 
 header nav a {
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
 }
 
 /* Hero images styles */
 #temple-hero {
-    width: 100%;
-    grid-column: 1/3;
-    position: relative;
+  width: 100%;
+  grid-column: 1/3;
+  position: relative;
 }
 
 #temple-hero img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .templelabel {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    padding: 1.5rem;
-    background: radial-gradient(#ffffff, #eee784);
-    background: -moz-radial-gradient(#fff, #5f6155);
-    border: 1px solid rgba(0,0,0,0.75);
-    box-shadow: 0 0 3rem #fff;
-    opacity: 0.75;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 1.5rem;
+  background: radial-gradient(#ffffff, #eee784);
+  background: -moz-radial-gradient(#fff, #5f6155);
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
 }
 
 #temple-hero p {
-    margin: 0;
-    padding: .25rem;
-    font-weight: 700;
-    font-family: "Great Vibes", serif;
-    font-size: 1.5rem;
+  margin: 0;
+  padding: 0.25rem;
+  font-weight: 700;
+  font-family: "Great Vibes", serif;
+  font-size: 1.5rem;
 }
 
 /* main */
 main {
-    grid-column: 1 / 4;
-    justify-self: center;
-    width: 100%;
-    margin-bottom: 100px;
+  grid-column: 1 / 4;
+  justify-self: center;
+  width: 100%;
+  margin-bottom: 100px;
 
-    display: grid;
-    /* gap: 1rem; */
-    grid-template: auto 1fr 1fr / 1fr;
+  display: grid;
+  /* gap: 1rem; */
+  grid-template: auto 1fr 1fr / 1fr;
 }
 
 main h2 {
-    grid-column: 1 / 3;
-    justify-self: center;
-    text-align: center;
-    margin: 20px 0;
-    border-bottom: solid 1px gray;
+  grid-column: 1 / 3;
+  justify-self: center;
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: solid 1px gray;
 }
 
 .card {
-    border: solid 1px var(--primary-color);
-    border-radius: 5px;
-    margin-bottom: 1rem;
+  border: solid 1px var(--primary-color);
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
 .card ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .card h3 {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px 5px 0 0;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
 }
 
 main section:nth-child(2) {
-    grid-column: 1 / 3;
+  grid-column: 1 / 3;
 }
 
 main section:nth-child(3) .container {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-column: 1 / 3;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-column: 1 / 3;
 }
 
 main section:nth-child(3) .container p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 main iframe {
-    /* display: none; */
-    width: 100%;
+  /* display: none; */
+  width: 100%;
 }
 
-main section:nth-child(4) {
-    grid-column: 1/ 3;
+main section:nth-child(3) {
+    grid-column: 1 / 4;
+}  
+
+main div:nth-child(4) {
+  grid-column: 1 / 4;
 }
 
 .card .container {
-    padding: 15px;
+  padding: 15px;
 }
 
 /* footer */
 footer {
-    background-color: var(--primary-color);
-    grid-column: 1 / 4;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: var(--primary-color);
+  grid-column: 1 / 4;
+  color: white;
+  padding: 20px;
+  text-align: center;
 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* text-align: start; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* text-align: start; */
 }
 
 #lastModified {
-    color: white;
-    font-size: .8rem;
+  color: white;
+  font-size: 0.8rem;
 }
