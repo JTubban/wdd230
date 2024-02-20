@@ -1,4 +1,4 @@
-@media screen and (min-width: 57.5em) {
+@media screen and (min-width: 992px) {
   nav {
     display: flex;
     flex-direction: row;
@@ -28,7 +28,7 @@
   }
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 600px) {
   #menu {
     display: none;
   }
@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 600px) {
   .navigation a:hover {
     background-color: white;
     color: var(--primary-color);
