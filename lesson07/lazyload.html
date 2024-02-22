@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="James Tubban">
+    <meta name="description" content="Lazy load">
+    <title>Lazy Load</title>
+    <link rel="stylesheet" href="../chamber/styles/base.css">
+    <link rel="stylesheet" href="../chamber/styles/normalize.css">
+    <link rel="stylesheet" href="../chamber/styles/base.css">
+    <link rel="stylesheet" href="../chamber/styles/medium.css">
+    <link rel="stylesheet" href="../chamber/styles/larger.css">
+    <link rel="stylesheet" href="styles/lazy-load-style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Lazy Loader Demonstration</h1>
+        </header>
+    
+        <main>
+            <picture>
+                <img src="https://loremflickr.com/400/600" alt="Placeholder Random Image" loading="lazy" width="400" height="600"/>
+            </picture>
+            <picture>
+                <img src="https://loremflickr.com/400/700" alt="Placeholder Random Image" loading="lazy" width="400" height="600"/>
+            </picture>
+            <picture>
+                <img src="https://loremflickr.com/400/800" alt="Placeholder Random Image" loading="lazy" width="400" height="600"/>
+            </picture>
+            <picture>
+                <img src="https://loremflickr.com/400/650" alt="Placeholder Random Image" loading="lazy" width="400" height="600"/>
+            </picture>
+            <picture>
+                <img src="https://loremflickr.com/400/750" alt="Placeholder Random Image" loading="lazy" width="400" height="600"/>
+            </picture>
+            <picture>
+                <img src="https://loremflickr.com/400/850" alt="Placeholder Random Image" loading="lazy" width="400" height="600"/>
+            </picture>
+        </main>
+        
+        <footer>
+            <div id="copyright">
+                <p>©<span id="year"></span></p>
+                <p>James Tubban</p>
+                <p>Philippines</p>
+            </div>
+
+            <div id="contact">
+                <p>Email: jtubban24@gmail.com</p>
+                <p>Mobile: +639283530886</p>
+                <p>LinkedIn: https://www.linkedin.com/in/jamestubban</p>
+            </div>
+
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+    <!-- scripts -->
+    <script src="../chamber/scripts/script.js"></script>
+    <script type="module" src="../chamber/scripts/getdates.js"></script>
+</body>
+</html>
