@@ -260,6 +260,14 @@ aside {
     height: 400px;
 }
 
+.title-heading {
+    background-color: var(--secondary-color);
+    color: var(--accent2);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 .image-container {
     margin-top: 1rem;
 }
