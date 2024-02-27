@@ -23,4 +23,9 @@
   .hero-text h1 {
     font-size: 1.8rem !important;
   }
+
+  #discovery-grid {
+    display: grid;
+    grid-template: 1fr / 400px 1fr;
+  }
 }

@@ -30,7 +30,7 @@
 }
 /* larger view */
 @media screen and (min-width: 62em) {
-  main {
+  main.index-content {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .hero-image {

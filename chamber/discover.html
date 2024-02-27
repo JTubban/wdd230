@@ -31,36 +31,51 @@
                 </nav>
             </header>
 
-            <main class="index-content">
-                <div class="hero-image">
-                    <picture class="image">
-                        <source media="(max-width: 400px)" srcset="images/wdd230-small.webp">
-                        <source media="(max-width: 768px)" srcset="images/wdd230-medium.webp">
-                        <img src="images/wdd230-large.webp" alt="Business meeting">
-                    </picture>
-
-                    <div class="hero-text">
-                        <h1>Tuao Chamber of Commerce</h1>
-                        <p>Join the Community!</p>
-                        <a href="#" class="hero-btn">Join</a>
+            <main id="discovery-grid">
+                <aside class="sidebar-content">
+                    <div class="item">
+                        <h3 class="title">Attration</h3>
+                        <img src="images/beach1.webp" alt="Philippine beach" loading="lazy">
+                        <div class="details">
+                            <p>Around the area!</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <h2>Current Event Section</h2>
-                </div>
+                    <div class="item">
+                        <h3 class="title">Event</h3>
+                        <img src="images/birthday.webp" alt="Birthday" loading="lazy">
+                        <div class="details">
+                            <p>When: Feb 28, 2024</p>
+                            <p>Where: Bulagao, Tuao, Cagayan Valley</p>
+                            <p>All are invited!</p>
+                        </div>
+                    </div>
 
-                <div class="card">
-                    <h2>Weather Section</h2>
+                    <div class="item">
+                        <h3 class="title">Weather</h3>
+                        <div class="details">
+                            <p class="temperature"></p>
+                            <p class="speed"></p>
+                            <p class="windchill"></p>
+                        </div>
+                    </div>
 
-                    <p class="temperature"></p>
-                    <p class="speed"></p>
-                    <p class="windchill"></p>
-                </div>
+                    <div class="item">
+                        <h3 class="title">Calendar</h3>
+                        <iframe src="https://calendar.google.com/calendar/embed?src=en.philippines%23holiday%40group.v.calendar.google.com&ctz=Asia%2FManila" style="border: 0" width="800" height="600" frameborder="0" scrolling="no" loading="lazy"></iframe>  
+                    </div>
+                </aside>
 
-                <div class="card">
-                    <h2>Advertisements</h2>
-                </div>
+                <section class="image-container">
+                    <div class="images">
+                        <img src="images/picture1.webp" alt="Picture 1" loading="lazy">
+                        <img src="images/picture2.webp" alt="Picture 2" loading="lazy">
+                        <img src="images/picture3.webp" alt="Picture 3" loading="lazy">
+                        <img src="images/picture4.webp" alt="Picture 4" loading="lazy">
+                        <img src="images/picture5.webp" alt="Picture 5" loading="lazy">
+                        <img src="images/picture6.webp" alt="Picture 6" loading="lazy">
+                    </div>
+                </section>
             </main>
 
             <footer>

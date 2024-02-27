@@ -20,13 +20,13 @@ modeButton.addEventListener("click", () => {
 			card.style.color = "#fff";
 		});
 
-		heroText.style.background = "#000";
+		// heroText.style.background = "#000";
 
 		header.style.background = "#000";
 		header.style.color = "#fff";
 
-		main.style.background = "gray";
-		main.style.color = "#fff";
+		// main.style.background = "gray";
+		// main.style.color = "#fff";
 
 		footer.style.background = "#000";
 		footer.style.color = "#fff";
@@ -38,13 +38,13 @@ modeButton.addEventListener("click", () => {
 			card.style.color = "#000";
 		});
 
-		heroText.style.background = "rgba(45, 45, 45, 0.9)";
+		// heroText.style.background = "rgba(45, 45, 45, 0.9)";
 
 		header.style.background = "#1D3557";
 		header.style.color = "#000";
 
-		main.style.background = "#eee";
-		main.style.color = "footer";
+		// main.style.background = "#eee";
+		// main.style.color = "footer";
 
 		footer.style.background = "#1D3557";
 		footer.style.color = "#fff";
