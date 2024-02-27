@@ -52,3 +52,6 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "🕶️";
 	}
 });
+
+const dateNow = new Date.now();
+console.log(dateNow);

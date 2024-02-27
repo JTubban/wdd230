@@ -243,6 +243,18 @@ aside {
     background-color: #dfe4eb;
 }
 
+.item:nth-child(1) {
+    height: 150px;
+}
+
+.item:nth-child(1) .details {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 111px;
+}
+
 .details {
     text-align: center;
     padding: 1rem;
@@ -258,14 +270,15 @@ aside {
 .item iframe {
     width: 100%;
     height: 400px;
+    /* scroll: no; */
 }
 
 .title-heading {
     background-color: var(--secondary-color);
     color: var(--accent2);
     padding: 2rem;
-    margin-bottom: 1rem;
     text-align: center;
+    margin: 0 0 1rem 0;
 }
 
 .image-container {

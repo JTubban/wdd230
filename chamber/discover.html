@@ -26,16 +26,25 @@
                 <div id="mode">🕶️</div>
                 <nav class="navigation">
                     <a href="../index.html" class="active">Home</a>
-                    <a href="#">Chamber</a>
-                    <a href="#">Contact</a>
+                    <a href="index.html">Chamber</a>
+                    <a href="discover.html">Discovery</a>
                 </nav>
             </header>
 
             <main id="discovery-grid">
+                <h1 class="title-heading">Discover Nature</h1>
+
                 <aside class="sidebar-content">
                     <div class="item">
+                        <h3 class="title">Page Statistic</h3>
+                        <div class="details">
+                            <p>Page visits: <span class="visits">This is your first time visiting this page</span></p>
+                        </div>
+                    </div>
+
+                    <div class="item">
                         <h3 class="title">Attration</h3>
-                        <img src="images/beach1.webp" alt="Philippine beach" loading="lazy">
+                        <img src="images/beach.webp" alt="Philippine beach" loading="lazy">
                         <div class="details">
                             <p>Around the area!</p>
                         </div>
@@ -62,12 +71,11 @@
 
                     <div class="item">
                         <h3 class="title">Calendar</h3>
-                        <iframe src="https://calendar.google.com/calendar/embed?src=en.philippines%23holiday%40group.v.calendar.google.com&ctz=Asia%2FManila" scrolling="no" loading="lazy"></iframe>  
+                        <iframe src="https://calendar.google.com/calendar/embed?src=en.philippines%23holiday%40group.v.calendar.google.com&ctz=Asia%2FManila" loading="lazy"></iframe>  
                     </div>
                 </aside>
 
                 <section class="image-container">
-                    <h1 class="title-heading">Discover Nature</h1>
                     <div class="images">
                         <img src="images/picture1.webp" alt="Picture 1" loading="lazy">
                         <img src="images/picture2.webp" alt="Picture 2" loading="lazy">
@@ -94,11 +102,11 @@
 
                 <p id="lastModified"></p>
             </footer>
-        </div>
-        
+        </div>        
         <!-- scripts -->
         <script src="scripts/windchill.js"></script>
         <script src="scripts/script.js"></script>
         <script type="module" src="scripts/getdates.js"></script>
+        <script src="scripts/page-visit.js"></script>
     </body>
 </html>
