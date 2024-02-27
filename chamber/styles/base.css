@@ -96,7 +96,11 @@ main.index-content {
 #mode {
     position: fixed;
     right: 0;
-    top: 30px;
+    top: 32px;
+    font-size: 2rem;
+    border: 2px solid rgb(219, 203, 203);
+    padding: 0;
+    background-color: gray;
 }
 
 #mode:hover {
