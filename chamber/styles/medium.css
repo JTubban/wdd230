@@ -26,7 +26,7 @@
 
   #discovery-grid {
     display: grid;
-    grid-template: 120px 1fr / 400px 1fr;
+    grid-template: 100px 1fr / 400px 1fr;
   }
   h1 {
     grid-column: 1 / 3;
