@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--back: hsla(150, 50%, 30%, 1);
+    --back2: hsla(150, 50%, 30%, .5);
+    --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsla(0,0%,20%,.8);
+	--borderlight: hsla(0,0%,33%,.3);
+	--shadow: hsl(0,0%,50%);
+	--zebra: hsl(0, 0%, 93%, 1);
+    /* custom colors */
+	--cap-color: rgb(72, 73, 72);
+    --cap-back: rgb(0, 0, 0);
+    --cap-back2: rgb(60, 59, 59);
+    --cap-border: rgb(151, 149, 149);
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+table {
+    margin: 20px auto;
+    border: thin solid var(--cap-border);
+    box-shadow: 0 2px 10px var(--shadow);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--cap-color);
+    font-size: .85rem;
+}
+
+thead th[colspan="4"] {
+    background-color: var(--foredark);
+    color: var(--forelight);
+    padding: 20px;
+}
+
+thead tr:nth-child(2) > th:nth-child(1) {
+    background-color: var(--foredark);
+    border: 0 !important;
+}
+
+th[scope="col"] {
+    background-color: var(--cap-back2);
+    color: var(--forelight);
+    padding: 15px;
+    border-right: thin solid var(--borderlight);
+}
+
+th, td {
+    padding: 7px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+    text-align: center;
+}
+
+td[scope="row"] {
+    font-weight: bold;
+}
+
+tbody tr > td {
+    border: 1px solid var(--borderlight);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--zebra);
+}
