@@ -46,7 +46,11 @@ thead th[colspan="4"] {
 
 thead tr:nth-child(2) > th:nth-child(1) {
     background-color: var(--foredark);
-    border: 0 !important;
+    /* border: 0 !important; */
+}
+
+thead tr:nth-child(2) > th:nth-child(4) {
+    border-right: 0;
 }
 
 th[scope="col"] {
