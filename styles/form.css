@@ -1,124 +1,158 @@
 :root {
-	--required: #ff2f00;
-	--light-gray: #999;
-	--gray: #555;
+  --required: #ff2f00;
+  --light-gray: #999;
+  --gray: #555;
+  --blue: #445ba9;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main {
-	display: initial;
+  display: initial;
 }
 
 #form-title {
-	border-bottom: 0;
-	text-align: left;
-	margin-left: 1rem;
+  border-bottom: 0;
+  text-align: left;
+  margin-left: 1rem;
+  color: var(--blue);
 }
 
 .fr1 {
-	margin: 1rem 1rem 3rem 1rem;
+  margin: 1rem 1rem 3rem 1rem;
 }
 
 .fr1 fieldset {
-    border: 1px solid #ddd;
-	padding-bottom: 2rem;
+  border: 1px solid #ddd;
+  padding-bottom: 2rem;
 }
 
 .fr1 legend {
-    padding: 0 0.5rem;
-    color: #445ba9;
+  padding: 0 0.5rem;
+  color: var(--blue);
 }
 
 .fr1 input {
-    /* background-color: #eee; */
-    /* border: solid 1px #999; */
-    border: solid 1px black;
+  /* background-color: #eee; */
+  /* border: solid 1px #999; */
+  border: solid 1px black;
 }
 
 .fr1 label {
-	display: block;
-	padding-top: 1rem;
-	color: #606062;
-	font-size: 0.9rem;
+  display: block;
+  padding-top: 1rem;
+  color: #606062;
+  font-size: 0.9rem;
 }
 
-.fr1 input[type='text'],
-.fr1 input[type='password'],
-.fr1 input[type='range'],
-.fr1 input[type='email']
-{
-	background-color: #eee !important;
-	display: block;
-	border: solid 1px var(--light-gray);
-	border-radius: 6px;
-	padding: 0.75rem;
-	color: #555;
-	width:  100%;
-	max-width: 400px;
-	/* appearance: none; */
+.fr1 input[type="text"],
+.fr1 input[type="password"],
+.fr1 input[type="range"],
+.fr1 input[type="email"] {
+  background-color: #eee !important;
+  display: block;
+  border: solid 1px var(--light-gray);
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+  /* appearance: none; */
 }
 
 .fr1 .required {
-	/* background-color: #445ba9; */
-	color: var(--required);
-	font-weight: bold;
+  /* background-color: #445ba9; */
+  color: var(--required);
+  font-weight: bold;
 }
 
 .fr1 input[type="submit"] {
-	border: none;
-	background-image: linear-gradient(#9c2c13, #6f200e);
-	color: white;
-	border-radius: 6px;
-	padding: 0.8rem;
-	width: 96%;
-	max-width: 400px;
-	/* margin: -1rem 2% 2rem 2%; */
-	margin-top: 1rem;
-	box-shadow: 1px 1px 4px var(--light-gray);
+  border: none;
+  background-image: linear-gradient(#9c2c13, #6f200e);
+  color: white;
+  border-radius: 6px;
+  padding: 0.8rem;
+  width: 96%;
+  max-width: 400px;
+  /* margin: -1rem 2% 2rem 2%; */
+  margin-top: 1rem;
+  box-shadow: 1px 1px 4px var(--light-gray);
 }
 
 .fr1 input:required {
-	border-bottom: solid 2px var(--required);
+  border-bottom: solid 2px var(--required);
 }
 
 input::placeholder {
-	font-size: .8rem;
-	font-style: italic;
-	font-weight: 700;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 700;
 }
 
 input[name="email"]:required:valid {
-	background-color: #bed !important;
+  background-color: #bed !important;
 }
 
 input[name="email"]:invalid {
-	background-color: #ffeeee !important;
+  background-color: #ffeeee !important;
 }
 
 /* r */
 #r {
-	width: 400px;
-	margin-top: -15px;
+  width: 400px;
+  margin-top: -15px;
 }
 
 #rangevalue {
-	font-size: 2rem;
-	color: navy;
+  font-size: 2rem;
+  color: navy;
 }
 
 #rangevalues {
-	display: flex;
-	/* margin-left: 16px;
+  display: flex;
+  /* margin-left: 16px;
 	margin-top: -5px; */
-	margin: -8px 0 0 16px;
-	width: 400px;
+  margin: -8px 0 0 16px;
+  width: 400px;
 }
 
 #rangevalues option {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.record-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #445ba9;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.back {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.back:hover {
+	background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+	#form-title {
+		width: 80%;
+		margin: 1.4rem auto;
+	}
+	
+	.fr1 {
+		width: 80%;
+		margin: 1rem auto 3rem auto;
+	}
 }
