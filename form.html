@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="James Tubban">
+    <meta name="description" content="James Tubban's WDD 230 portfolio: Explore web frontend development projects and assignments. Your course assignment portal.">
+    <!-- Essential META Tags -->
+    <meta property="og:title" content="Tuao Municipality">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.flickr.com/photos/fraginal/50125864098/in/pool-worldtrekker">
+    <meta property="og:url" content="https://jtubban.github.io/wdd230/index.html">
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    <title>[James Tubban] - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><img src="images/me.webp" alt="James Tubban">James C. Tubban</h1>
+            <button id="menu"></button>
+            <nav class="navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+                <a href="chamber/index.html">Chamber</a>
+                <a href="https://www.byui.edu/">BYU-Idaho</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            </nav>
+        </header>
+    
+        <div id="temple-hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/temple-small.webp">
+                <source media="(max-width: 960px)" srcset="images/temple-medium.webp">
+                <img src="images/temple-larger.webp" width="1200" height="600" alt="Laie Temple">
+            </picture>
+            <div class="templelabel">
+                <p>Laie Temple</p>
+            </div>
+        </div>
+
+        <main>
+            <h2 id="form-title">Create New Account</h2>
+            <form method="get" action="record.html" class="fr1">
+                <fieldset>
+                    <legend>User Application</legend>
+                    <label for="username">Username<span class="required">*</span></label>
+                    <input type="text" name="username" id="username" required>
+
+                    <label for="password">Password<span class="required">*</span></label>
+                    <input type="password" name="password" pattern="[A-Za-z]{8}" id="password" required>
+
+                    <label for="confirmPassword">Confirm Password<span class="required">*</span></label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    <p id="message"></p>
+
+                    <label for="email">Email<span class="required">*</span></label>
+                    <input type="email" name="email" id="email" pattern="[a-zA-Z0-9_.\-]+@byui.edu" placeholder="Your byui email address" title="A valid byui.edu email address." required>
+
+                    <label for="rating">Page Rating</label>
+                    <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+
+                    <input type="submit" value="Register">
+                </fieldset>
+            </form>
+        </main>
+    
+        <footer>
+            <div id="copyright">
+                <p>©<span id="year"></span></p>
+                <p>James Tubban</p>
+                <p>Philippines</p>
+            </div>
+
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+    <!-- scripts -->
+    <script src="scripts/form.js"></script>
+    <script src="scripts/script.js"></script>
+    <script type="module" src="scripts/getdates.js"></script>
+
+</body>
+</html>

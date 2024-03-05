@@ -1,0 +1,110 @@
+:root {
+	--required: #ff2f00;
+	--light-gray: #999;
+	--gray: #555;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	display: initial;
+}
+
+#form-title {
+	border-bottom: 0;
+	text-align: left;
+	margin-left: 1rem;
+}
+
+.fr1 {
+	margin: 1rem;
+}
+
+.fr1 fieldset {
+    border: 1px solid #ddd;
+}
+
+.fr1 legend {
+    padding: 0 0.5rem;
+    color: #445ba9;
+}
+
+.fr1 input {
+    /* background-color: #eee; */
+    /* border: solid 1px #999; */
+    border: solid 1px black;
+}
+
+.fr1 label {
+	display: block;
+	padding-top: 1rem;
+	color: #606062;
+	font-size: 0.9rem;
+}
+
+.fr1 input[type='text'],
+.fr1 input[type='password'],
+.fr1 input[type='range'],
+.fr1 input[type='email']
+{
+	background-color: #eee !important;
+	display: block;
+	border: solid 1px var(--light-gray);
+	border-radius: 6px;
+	padding: 0.75rem;
+	color: #555;
+	width:  100%;
+	max-width: 400px;
+	/* appearance: none; */
+}
+
+.fr1 .required {
+	/* background-color: #445ba9; */
+	color: var(--required);
+	font-weight: bold;
+}
+
+input::placeholder {
+	font-size: .8rem;
+	font-style: italic;
+	font-weight: 700;
+}
+
+input[name="email"]:required:valid {
+	background-color: #bed !important;
+}
+
+input[name="email"]:invalid {
+	background-color: #ffeeee !important;
+}
+
+/* r */
+#r {
+	width: 180px;
+	width: 200px;
+	/* width: 96%;
+	max-width: 400px; */
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	/* margin: 0 0 0 25px; */
+	margin-left: 5px;
+	width: 200px;
+	/* width: 96%;
+	max-width: 400px; */
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
