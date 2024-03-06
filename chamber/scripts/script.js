@@ -1,3 +1,9 @@
+// hidden
+const currentTimestamp = Date.now();
+
+document.querySelector('#myHiddenField').value = new Date(currentTimestamp);
+
+// original
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -55,3 +61,4 @@ modeButton.addEventListener("click", () => {
 
 const dateNow = new Date.now();
 console.log(dateNow);
+
