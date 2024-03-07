@@ -30,63 +30,101 @@
                 </nav>
             </header>
 
-            <main>
-                <h1 class="info-title">Enter Your Information</h1>
-
-                <form action="thankyou.html" method="get" class="join">
-                    <fieldset>
-                        <legend>Application Information</legend>
-                        <label>
-                            First Name<span class="required">*</span>
-                            <input type="text" name="fname" id="fname" required>
-                        </label>
-    
-                        <label>
-                            Last Name<span class="required">*</span>
-                            <input type="text" name="lname" id="lname" required>
-                        </label>
-    
-                        <label>
-                            Title/Position<span class="required">*</span>
-                            <input type="text" name="position" id="position" pattern="[a-zA-Z]{7}" required>
-                        </label>
-    
-                        <label>
-                            Email<span class="required">*</span>
-                            <input type="email" name="email" id="email" placeholder="example@email.com" required>
-                        </label>
-    
-                        <label>
-                            Mobile Phone Number<span class="required">*</span>
-                            <input type="tel" name="mobilePhone" id="mobilePhone" required>
-                        </label>
-    
-                        <label>
-                            Business/Organization's name<span class="required">*</span>
-                            <input type="text" name="orgName" id="orgName" required>
-                        </label>
-                    </fieldset>
+            <main class="main-join">
+                <section class="membership-level">
+                    <h2>Membership Level Benefits</h2>
                     
-                    <fieldset>
-                        <legend>Membership Details</legend>
-                        <div>Membership Level<span class="required">*</span></div>
-                        <label><input type="radio" name="memlevel" value="NP">NP Membership is for non profit organizations and no fee</label>
-                        <label><input type="radio" name="memlevel" value="Bronze">Bronze Membership</label>
-                        <label><input type="radio" name="memlevel" value="Silver">Silver Membership</label>
-                        <label><input type="radio" name="memlevel" value="Gold">Gold Membership</label>
+                    <div class="membership">
+                        <h4>None Profit Membership</h4>
+                        <ul>
+                            <li>Cost: $50 per year</li>
+                            <li>Benefits: Access to member-only event, monthly newsletter</li>
+                        </ul>
+                    </div>
 
-                        <label>
-                            Description
-                            <textarea name="desc" id="desc" cols="40" rows="5"></textarea>
-                        </label>
+                    <div class="membership">
+                        <h4>Bronze Membership</h4>
+                        <ul>
+                            <li>Cost: $50 per year</li>
+                            <li>Benefits: Access to member-only event, monthly newsletter</li>
+                        </ul>
+                    </div>
+
+                    <div class="membership">
+                        <h4>Silver Membership</h4>
+                        <ul>
+                            <li>Cost: $50 per year</li>
+                            <li>Benefits: Access to member-only event, monthly newsletter</li>
+                        </ul>
+                    </div>
+
+                    <div class="membership">
+                        <h4>Gold Membership</h4>
+                        <ul>
+                            <li>Cost: $50 per year</li>
+                            <li>Benefits: Access to member-only event, monthly newsletter</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h1 class="info-title">Enter Your Information</h1>
+
+                    <form action="thankyou.html" method="get" class="join">
+                        <fieldset>
+                            <legend>Application Information</legend>
+                            <label>
+                                First Name<span class="required">*</span>
+                                <input type="text" name="fname" id="fname" required>
+                            </label>
+        
+                            <label>
+                                Last Name<span class="required">*</span>
+                                <input type="text" name="lname" id="lname" required>
+                            </label>
+        
+                            <label>
+                                Title/Position<span class="required">*</span>
+                                <input type="text" name="position" id="position" pattern="^[a-zA-Z\- ]{7,}$" required>
+                            </label>
+        
+                            <label>
+                                Email<span class="required">*</span>
+                                <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                            </label>
+        
+                            <label>
+                                Mobile Phone Number<span class="required">*</span>
+                                <input type="tel" name="mobilePhone" id="mobilePhone" required>
+                            </label>
+        
+                            <label>
+                                Business/Organization's name<span class="required">*</span>
+                                <input type="text" name="orgName" id="orgName" required>
+                            </label>
+                        </fieldset>
                         
-                        <label>
-                            <input type="hidden" id="myHiddenField" name="timestamp">
-                        </label>
-                    </fieldset>
+                        <fieldset>
+                            <legend>Membership Details</legend>
+                            <div>Membership Level<span class="required">*</span></div>
+                            <label><input type="radio" name="memlevel" value="NP">NP Membership is for non profit organizations and no fee</label>
+                            <label><input type="radio" name="memlevel" value="Bronze">Bronze Membership</label>
+                            <label><input type="radio" name="memlevel" value="Silver">Silver Membership</label>
+                            <label><input type="radio" name="memlevel" value="Gold">Gold Membership</label>
 
-                    <input type="submit" value="Join Chamber">
-                </form>
+                            <label>
+                                Description
+                                <textarea name="desc" id="desc" cols="40" rows="5"></textarea>
+                            </label>
+                            
+                            <label>
+                                <input type="hidden" id="myHiddenField" name="timestamp">
+                            </label>
+                        </fieldset>
+
+                        <input type="submit" value="Join Chamber">
+                    </form>
+                </section> 
             </main>
 
             <footer>

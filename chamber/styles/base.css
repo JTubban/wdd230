@@ -292,9 +292,39 @@ aside {
 /* Discovery ends */
 
 /* Join styles */
+.membership-level {
+    display: none;
+    border: 1px solid #ddd;
+    height: 420px;
+    margin-top: 1.2rem;
+    border-radius: 6px;
+}
+
+.membership-level h2 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 6px 6px 0 0;
+}
+
+.membership-level .membership {
+    margin: 1rem;
+}
+
+.membership-level h4 {
+    color: var(--primary-color);
+}
+
+.membership ul > li{
+    font-size: .9rem;
+    font-style: italic;
+    color: var(--secondary-color)
+}
+
 .info-title {
     padding: 0 .5rem;
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 .join {
@@ -375,4 +405,13 @@ aside {
 
 .join input[type='submit']:hover {
     cursor: pointer;
+}
+
+/* Form submission style */
+.submission {
+    text-align: center;
+    background-color: #415A77;
+    color: #ede9e9;
+    padding: 20px;
+    margin: 0 auto;
 }
