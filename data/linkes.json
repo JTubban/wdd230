@@ -1,0 +1,117 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/index.html",
+                    "title": "Holy Layout | JS Pen"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson03": "03",
+            "links": [
+                {
+                    "url": "lesson03/images/css-combinators-exercise.png",
+                    "title": "Combinators"
+                },
+                {
+                    "url": "lesson03/pseudo-elements.html",
+                    "title": "Pseudo-Elements"
+                },
+                {
+                    "url": "https://codepen.io/James-Tubban/pen/vYPWEdN",
+                    "title": "Responsive Menu"
+                }
+            ]
+        },
+        {
+            "lesson04": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/James-Tubban/pen/qBvovya",
+                    "title": "CSS Psudo Classes"
+                }
+            ]
+        },
+        {
+            "lesson05": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "DOM Manipulation"
+                }
+            ]
+        },
+        {
+            "lesson06": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+        {
+            "lesson07": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Load Demonstration"
+                },
+                {
+                    "url": "lesson07/bom.html",
+                    "title": "Local Storage"
+                }
+            ]
+        },
+        {
+            "lesson08": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "lesson08/form-start/Form-start/index.html",
+                    "title": "Course Proposal Design"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form Build"
+                }
+            ]
+        },
+        {
+            "lesson09": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "JSON example"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "The Fetch API"
+                }
+            ]
+        }
+    ]
+}
