@@ -23,7 +23,7 @@
             ]
         },
         {
-            "lesson03": "03",
+            "lesson": "03",
             "links": [
                 {
                     "url": "lesson03/images/css-combinators-exercise.png",
@@ -40,7 +40,7 @@
             ]
         },
         {
-            "lesson04": "04",
+            "lesson": "04",
             "links": [
                 {
                     "url": "https://codepen.io/James-Tubban/pen/qBvovya",
@@ -49,7 +49,7 @@
             ]
         },
         {
-            "lesson05": "05",
+            "lesson": "05",
             "links": [
                 {
                     "url": "lesson05/bom.html",
@@ -58,7 +58,7 @@
             ]
         },
         {
-            "lesson06": "06",
+            "lesson": "06",
             "links": [
                 {
                     "url": "lesson06/images/landscape.webp",
@@ -71,7 +71,7 @@
             ]
         },
         {
-            "lesson07": "07",
+            "lesson": "07",
             "links": [
                 {
                     "url": "lesson07/lazyload.html",
@@ -84,7 +84,7 @@
             ]
         },
         {
-            "lesson08": "08",
+            "lesson": "08",
             "links": [
                 {
                     "url": "lesson08/tablebuild.html",
@@ -101,7 +101,7 @@
             ]
         },
         {
-            "lesson09": "09",
+            "lesson": "09",
             "links": [
                 {
                     "url": "lesson09/new-ward-members.json",
