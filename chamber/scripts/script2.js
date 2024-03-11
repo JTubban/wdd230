@@ -1,7 +1,7 @@
 // hidden
-// const currentTimestamp = Date.now();
+const currentTimestamp = Date.now();
 
-// document.querySelector('#myHiddenField').value = currentTimestamp;
+document.querySelector('#myHiddenField').value = currentTimestamp;
 
 // original
 const hamButton = document.querySelector('#menu');
