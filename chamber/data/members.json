@@ -1,6 +1,83 @@
 {
-    "companies": {
-        "name": "Accenture",
-        "address": 
-    }
+    "companies": [
+        {
+            "name": "Microsoft",
+            "address": "Redmond, Washington, USA",
+            "contact": "773-702-1000",
+            "website": "https://www.britannica.com/topic/Microsoft-Corporation",
+            "ceo": "Satya Nadella",
+            "marketcap": "$3.029 Trillion",
+            "founded": "1975",
+            "memLevel": "Gold",
+            "image": "images/microsoft.jpg"
+        },
+        {
+            "name": "Apple",
+            "address": "Cupertino, California, USA",
+            "contact": "773-705-1222",
+            "website": "https://www.apple.com/",
+            "ceo": "Tim Cook",
+            "marketcap": "$2.801 Trillion",
+            "founded": "1976",
+            "memLevel": "Gold",
+            "image": "images/apple.jpg"
+
+        },
+        {
+            "name": "Saudi Aramco",
+            "address": "Dhahran, Saudi Arabia",
+            "contact": "699-703-1020",
+            "website": "https://www.aramco.com/",
+            "ceo": "Abdul Jabar",
+            "marketcap": "$2.049 Trillion",
+            "founded": "1933",
+            "memLevel": "Gold",
+            "image": "images/aramco.png"
+        },
+        {
+            "name": "NVIDIA",
+            "address": "2788 San Tomas Expy, Santa Clara, CA, 95051, USA",
+            "contact": "708-702-1111",
+            "website": "https://www.nvidia.com/en-us/",
+            "ceo": "Jensen Huang",
+            "marketcap": "$1.941 Trillion",
+            "founded": "1993",
+            "memLevel": "Silver",
+            "image": "images/nvidia.png"
+        },
+        {
+            "name": "Amazon",
+            "address": "Seattle, Washington, USA",
+            "contact": "702-705-2323",
+            "website": "https://www.amazon.com/",
+            "ceo": "Jeff Bezos",
+            "marketcap": "$1.798 Trillion",
+            "founded": "1994",
+            "memLevel": "Bronze",
+            "image": "images/amazon.png"
+
+        },
+        {
+            "name": "Google",
+            "address": "Mountain View, California, USA",
+            "contact": "707-704-4404",
+            "website": "https://www.google.com",
+            "ceo": "Larry Page",
+            "marketcap": "$1.701 Trillion",
+            "founded": "1998",
+            "memLevel": "None Profit",
+            "image": "images/google.jpg"
+        },
+        {
+            "name": "Facebook",
+            "address": "Menlo Park, California, USA",
+            "contact": "707-888-4526",
+            "website": "https://www.facebook.com/",
+            "ceo": "Mark Zuckerberg",
+            "marketcap": "$1.233 Trillion",
+            "founded": "2004",
+            "memLevel": "Silver",
+            "image": "images/facebook.png"
+        }
+    ]
 }
