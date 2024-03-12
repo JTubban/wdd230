@@ -9,7 +9,8 @@
             "marketcap": "$3.029 Trillion",
             "founded": "1975",
             "memLevel": "Gold",
-            "image": "images/microsoft.jpg"
+            "image": "images/microsoft.jpg",
+            "imageName": "Microsoft Image"
         },
         {
             "name": "Apple",
@@ -20,7 +21,8 @@
             "marketcap": "$2.801 Trillion",
             "founded": "1976",
             "memLevel": "Gold",
-            "image": "images/apple.jpg"
+            "image": "images/apple.jpg",
+            "imageName": "Apple Image"
 
         },
         {
@@ -32,7 +34,8 @@
             "marketcap": "$2.049 Trillion",
             "founded": "1933",
             "memLevel": "Gold",
-            "image": "images/aramco.png"
+            "image": "images/aramco.png",
+            "imageName": "Aramco Image"
         },
         {
             "name": "NVIDIA",
@@ -43,7 +46,8 @@
             "marketcap": "$1.941 Trillion",
             "founded": "1993",
             "memLevel": "Silver",
-            "image": "images/nvidia.png"
+            "image": "images/nvidia.png",
+            "imageName": "Nvidia Image"
         },
         {
             "name": "Amazon",
@@ -54,8 +58,8 @@
             "marketcap": "$1.798 Trillion",
             "founded": "1994",
             "memLevel": "Bronze",
-            "image": "images/amazon.png"
-
+            "image": "images/amazon.png",
+            "imageName": "Amazon Image"
         },
         {
             "name": "Google",
@@ -66,7 +70,8 @@
             "marketcap": "$1.701 Trillion",
             "founded": "1998",
             "memLevel": "None Profit",
-            "image": "images/google.jpg"
+            "image": "images/google.jpg",
+            "imageName": "Google Image"
         },
         {
             "name": "Facebook",
@@ -77,7 +82,8 @@
             "marketcap": "$1.233 Trillion",
             "founded": "2004",
             "memLevel": "Silver",
-            "image": "images/facebook.png"
+            "image": "images/facebook.png",
+            "imageName": "Facebook Image"
         }
     ]
 }
