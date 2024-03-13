@@ -65,11 +65,7 @@
 	}
 }
 
-@media screen and (min-width: 992px) {
-	.membership-level {
-		display: block;
-	}
-
+/* @media screen and (min-width: 992px) {
 	main.main-join {
 		display: grid;
 		grid-template: 1fr / 4fr 8fr;
@@ -77,4 +73,4 @@
 		width: 80%;
 		margin: 0 auto;
 	}
-}
+} */

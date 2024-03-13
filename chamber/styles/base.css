@@ -298,8 +298,13 @@ aside {
 /* Discovery ends */
 
 /* Join styles */
+.main-join {
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+}
+
 .membership-level {
-  display: none;
   border: 1px solid #ddd;
   height: 420px;
   margin-top: 1.2rem;
