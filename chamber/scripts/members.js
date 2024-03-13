@@ -6,6 +6,7 @@ async function getMembers() {
     const data = await response.json();
 
     displayMembers(data.companies);
+    // console.log();
 }
 
 const displayMembers = (companies) => {
