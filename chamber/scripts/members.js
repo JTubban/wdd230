@@ -47,18 +47,19 @@ const displayMembers = (companies) => {
         display.appendChild(section);
     });
 };
+
 getMembers();
 
 
-const gridButton = document.querySelector('#grid');
-const listButton = document.querySelector('#list');
+// const gridButton = document.querySelector('#grid');
+// const listButton = document.querySelector('#list');
 
-gridButton.addEventListener('click', () => {
-    display.classList.add('grid');
-    display.classList.remove('list');
-});
+// gridButton.addEventListener('click', () => {
+//     display.classList.add('grid');
+//     display.classList.remove('list');
+// });
 
-listButton.addEventListener('click', () => {
-    display.classList.add('list');
-    display.classList.remove('grid');
-});
+// listButton.addEventListener('click', () => {
+//     display.classList.add('list');
+//     display.classList.remove('grid');
+// });
