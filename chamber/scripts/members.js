@@ -1,5 +1,5 @@
 const url = 'https://jtubban.github.io/wdd230/chamber/data/members.json';
-const grid = document.querySelector('.grid');
+const display = document.querySelector('.grid');
 
 async function getMembers() {
     const response = await fetch(url);
@@ -10,21 +10,6 @@ async function getMembers() {
 
 const displayMembers = (companies) => {
     companies.forEach(company => {
-        
-        // grid.innerHTML = `
-        //     <section>
-        //         <img src="${company.image}" alt="${company.imageName}">
-        //         <h3>${company.name}</h3>
-        //         <p>${company.address}</p>
-        //         <p>${company.contact}</p>
-        //         <p>CEO: ${company.ceo}</p>
-        //         <p>Founded: ${company.founded}</p>
-        //         <p>Membership Level: ${company.memLevel}</p>
-        //         <p>Marker Cap: ${company.marketcap}</p>
-        //         <a href="${company.website}">Visit</a>
-        //     </section>
-        // `;
-
         let section = document.createElement('section');
         let companyImage = document.createElement('img');
         let companyName = document.createElement('h3');
@@ -59,8 +44,15 @@ const displayMembers = (companies) => {
         section.appendChild(markercap);
         section.appendChild(website);
 
-        grid.appendChild(section);
+        display.appendChild(section);
     });
 };
-
 getMembers();
+
+
+const gridButton = document.querySelector('#grid');
+const listButton = document.querySelector('#list');
+
+gridButton.addEventListener('click', () => {
+    
+});
