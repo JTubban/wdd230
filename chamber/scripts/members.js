@@ -6,7 +6,7 @@ async function getMembers() {
     const data = await response.json();
 
     displayMembers(data.companies);
-    // console.log();
+    // console.log(data.companies.name);
 }
 
 const displayMembers = (companies) => {
@@ -52,15 +52,15 @@ const displayMembers = (companies) => {
 getMembers();
 
 
-// const gridButton = document.querySelector('#grid');
-// const listButton = document.querySelector('#list');
+const gridButton = document.querySelector('#grid');
+const listButton = document.querySelector('#list');
 
-// gridButton.addEventListener('click', () => {
-//     display.classList.add('grid');
-//     display.classList.remove('list');
-// });
+gridButton.addEventListener('click', () => {
+    display.classList.add('grid');
+    display.classList.remove('list');
+});
 
-// listButton.addEventListener('click', () => {
-//     display.classList.add('list');
-//     display.classList.remove('grid');
-// });
+listButton.addEventListener('click', () => {
+    display.classList.add('list');
+    display.classList.remove('grid');
+});

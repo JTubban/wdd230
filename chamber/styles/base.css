@@ -488,14 +488,14 @@ aside {
   width: 70px;
 }
 /* list style */
-/* .list {
+.list {
   display: flex;
   flex-direction: column;
 }
 
 .list section {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   margin: 0;
   padding: 0.25rem;
 }
@@ -504,8 +504,12 @@ aside {
   margin: 0 1rem;
 }
 
-.list section img {
+.list section img, .list section p {
   display: none;
+}
+
+.list section p:nth-child(3) {
+  display: block;
 }
 
 .list section h3 {
@@ -515,5 +519,5 @@ aside {
 
 .list section:nth-child(even) {
   background-color: #bed;
-} */
+}
 /* discovery style ends */
