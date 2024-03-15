@@ -244,3 +244,31 @@ footer {
   color: white;
   font-size: 0.8rem;
 }
+
+/* Weather style starts */
+.town {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.figDesign {
+  display: flex;
+}
+
+.figDesign img {
+  display: block;
+}
+
+.figDesign p {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.card:nth-child(3) .container{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+/* Weather style ends */
