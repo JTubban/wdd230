@@ -26,7 +26,7 @@ function eventBanner(event) {
 
 eventBanner(currentDay);
 
-// // Weather
+// Weather
 const apiKey = '107e304aaafe15d894ec5133f0144188';
 const city = 'Tuao';
 const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&lat=17.70&lon=121.50&units=imperial&appid=${apiKey}`;
@@ -72,7 +72,7 @@ async function apiFetchForecast() {
         const response = await fetch(forecast);
         if (response.ok) {
             const data = await response.json();
-            // console.log(data.list);
+            // console.log(data);
             threeDayForecast(data);
         } else {
             throw Error(await response.text());
@@ -91,8 +91,8 @@ function threeDayForecast(data) {
         let p = document.createElement('p');
 
         p.innerHTML = `${day.date}: ${day.temperature}&deg;F`;
-        
         figure.appendChild(p);
     });
 }
+
 apiFetchForecast();
