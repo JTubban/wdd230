@@ -184,8 +184,17 @@ main.index-content {
 .card {
   text-align: center;
   height: 20%;
-  background-color: gray;
-  padding: 1rem;
+  background-color: #e9e9e9;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  background-color: var(--secondary-color);
+  color: var(--accent2);
+  padding: .3rem;
+  border-radius: 6px 6px 0 0;
 }
 
 .card:nth-child(2) {
@@ -509,7 +518,8 @@ aside {
   margin: 0 1rem;
 }
 
-.list section img, .list section p {
+.list section img,
+.list section p {
   display: none;
 }
 
@@ -526,3 +536,42 @@ aside {
   background-color: #bed;
 }
 /* discovery style ends */
+
+/* eventBanner style starts */
+#eventBanner {
+  position: relative;
+  text-align: center;
+  padding: 0.7rem;
+  background-color: var(--accent1);
+  color: var(--accent2);
+}
+
+#eventBanner p,
+.closeButton {
+  display: inline;
+}
+
+.closeButton {
+  margin-left: 10px;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+}
+/* eventBanner style ends */
+
+/* New weather style starts */
+.index-content .card:nth-child(3) h3 {
+  color: var(--primary-color);
+}
+
+.index-content .card:nth-child(3) figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-content .card:nth-child(3) > p {
+  color: var(--secondary-color)
+}
+/* New weather style ends */
