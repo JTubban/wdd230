@@ -567,7 +567,7 @@ aside {
   color: var(--primary-color);
 }
 
-.index-content .card:nth-child(3) figure {
+.card:nth-child(3) .weatherDetails div {
   display: flex;
   justify-content: center;
   align-items: center;
