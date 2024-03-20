@@ -25,7 +25,7 @@ function eventBanner(event) {
   }
 }
 
-eventBanner(currentDay);
+// eventBanner(currentDay);
 
 // Weather
 const apiKey = "107e304aaafe15d894ec5133f0144188";
@@ -75,17 +75,17 @@ function capitalizeWords(str) {
 
 apiFetch();
 
-const forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&lat=17.70&lon=121.50&units=imperial&appid=${apiKey}`;
+const forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&lat=17.70&lon=121.50&exclude=current,minutely,hourly,alerts&units=imperial&appid=${apiKey}`;
 
 async function apiFetchForecast() {
     try {
         const response = await fetch(forecast);
         if (response.ok) {
-        const data = await response.json();
-        // console.log(data);
-        threeDayForecast(data);
+          const data = await response.json();
+          // console.log(data.list);
+          threeDayForecast(data);
         } else {
-        throw Error(await response.text());
+          throw Error(await response.text());
         }
     } catch (error) {
         error;
@@ -93,19 +93,20 @@ async function apiFetchForecast() {
 }
 
 function threeDayForecast(data) {
-    const forecast = data.list.slice(0, 8);
-    const threeDayF = forecast.map((entry) => ({
-        date: entry.dt_txt,
-        temperature: entry.main.temp,
-    }));
+    for(let i = 0; i < 3; i++) {
+        const threeDayF = document.querySelector('.threeDayF');
+        const dateElement = document.createElement('p');
+        const temperature = document.createElement('p');
 
-    threeDayF.forEach((day) => {
-        let forecasts = document.querySelector(".forecasts");
-        let p = document.createElement("p");
-        p.innerHTML = `${day.date}: ${day.temperature}&deg;F`;
-        
-        forecasts.appendChild(p);
-    });
+        const date = new Date(data.list[i*8].dt * 1000);
+        const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+
+        dateElement.textContent = date.toLocaleDateString('en-US', options);
+        temperature.innerHTML = Math.round(data.list[i*8].main.temp) + '&deg;F';
+
+        threeDayF.appendChild(dateElement);
+        threeDayF.appendChild(temperature);
+    }
 }
 
 apiFetchForecast();

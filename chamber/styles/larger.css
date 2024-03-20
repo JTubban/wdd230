@@ -64,13 +64,3 @@
 		font-size: 2.5rem !important;
 	}
 }
-
-/* @media screen and (min-width: 992px) {
-	main.main-join {
-		display: grid;
-		grid-template: 1fr / 4fr 8fr;
-		gap: 1rem;
-		width: 80%;
-		margin: 0 auto;
-	}
-} */

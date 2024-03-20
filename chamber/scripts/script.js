@@ -21,10 +21,10 @@ const cards = document.querySelectorAll(".card");
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("🕶️")) {
-		cards.forEach(card => {
-			card.style.background = "#000";
-			card.style.color = "#fff";
-		});
+		// cards.forEach(card => {
+		// 	card.style.background = "#000";
+		// 	card.style.color = "#fff";
+		// });
 
 		// heroText.style.background = "#000";
 
@@ -39,10 +39,10 @@ modeButton.addEventListener("click", () => {
 
 		modeButton.textContent = "🔆";
 	} else {
-		cards.forEach(card => {
-			card.style.background = "gray";
-			card.style.color = "#000";
-		});
+		// cards.forEach(card => {
+		// 	card.style.background = "#e9e9e9";
+		// 	card.style.color = "#fff";
+		// });
 
 		// heroText.style.background = "rgba(45, 45, 45, 0.9)";
 
