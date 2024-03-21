@@ -103,8 +103,13 @@ async function apiFetchForecast() {
 }
 
 function threeDayForecast(data) {
+    const forecasts = document.querySelector('.forecasts');
+    const h3 = document.createElement('h3');
+    h3.textContent = 'Three-Day Temperature Forecast';
+    forecasts.appendChild(h3);
+
     for(let i = 0; i < 3; i++) {
-        const threeDayF = document.querySelector('.threeDayF');
+        const div = document.createElement('div');
         const dateElement = document.createElement('p');
         const temperature = document.createElement('p');
 
@@ -114,8 +119,10 @@ function threeDayForecast(data) {
         dateElement.textContent = date.toLocaleDateString('en-US', options);
         temperature.innerHTML = Math.round(data.list[i*8].main.temp) + '&deg;F';
 
-        threeDayF.appendChild(dateElement);
-        threeDayF.appendChild(temperature);
+        div.appendChild(dateElement);
+        div.appendChild(temperature);
+
+        forecasts.appendChild(div);
     }
 }
 
