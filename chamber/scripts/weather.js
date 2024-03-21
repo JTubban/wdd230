@@ -54,16 +54,26 @@ function displayResults(data) {
     let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let weatherDetails = document.querySelector('.weatherDetails');
 
-    let city = document.querySelector(".city");
-    let weatherIcon = document.querySelector(".weatherIcon");
-    let temperature = document.querySelector(".temperature");
+    let h3 = document.createElement('h3');
+    let div = document.createElement('div');
+    let img = document.createElement('img');
+    let p = document.createElement('p');
 
-    city.textContent = `${data.name} Municipality, Philippines`;
+    h3.setAttribute('class', 'city');
+    img.setAttribute('src', 'weatherIcon');
+    p.setAttribute('class', 'temperature');
 
-    weatherIcon.setAttribute("src", iconsrc);
-    temperature.setAttribute("class", "temperature");
-    temperature.innerHTML = `Temperature: ${Math.round(data.main.temp)}&deg;F - ${capitalizeWords(data.weather[0].description)}`;
+    h3.textContent = `${data.name} Municipality, Philippines`;
 
+    img.setAttribute("src", iconsrc);
+    p.setAttribute("class", "temperature");
+    p.innerHTML = `Temperature: ${Math.round(data.main.temp)}&deg;F - ${capitalizeWords(data.weather[0].description)}`;
+
+    div.appendChild(img);
+    div.appendChild(p);
+
+    weatherDetails.appendChild(h3);
+    weatherDetails.appendChild(div);
 }
 
 function capitalizeWords(str) {
