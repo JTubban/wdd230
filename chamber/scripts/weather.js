@@ -1,4 +1,5 @@
-const currentDay = new Date().getDay();
+// const currentDay = new Date().getDay();
+const currentDay = 2;
 
 function eventBanner(event) {
   if (event >= 1 && event <= 3) {
@@ -25,7 +26,7 @@ function eventBanner(event) {
   }
 }
 
-// eventBanner(currentDay);
+eventBanner(currentDay);
 
 // Weather
 const apiKey = "107e304aaafe15d894ec5133f0144188";
