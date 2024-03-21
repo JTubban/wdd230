@@ -42,6 +42,12 @@ main.index-content {
   z-index: 99999;
 }
 
+.active {
+  background-color: var(--accent2);
+  color: var(--secondary-color) !important;
+  font-weight: bold;
+}
+
 /* Hamburger navigation starts */
 .header div {
   display: flex;
