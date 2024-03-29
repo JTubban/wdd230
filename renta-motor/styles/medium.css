@@ -1,0 +1,23 @@
+@media screen and (max-width: 992px) {
+  .nav-width {
+    min-width: 100%;
+  }
+
+  .book-now {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navigation a {
+    display: block;
+  }
+}
