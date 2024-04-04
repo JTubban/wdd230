@@ -3,6 +3,14 @@
         {
             "name": "Honda Metro Scooter",
             "capacity": "1 Person",
+            "specs": [
+                "Engine: 49cc liquid-cooled, single-cylinder",
+                "Power: 4.4 horsepower @ 8,000 RPM",
+                "Top Speed: 40-42 MPH",
+                "Fuel Economy: 117 Miles Per Gallon",
+                "Weight: 179 lbs (curb weight)",
+                "Seat Height: 28.3 inches12"
+            ],
             "reservation": [
                 {
                     "halfDay": "$20",

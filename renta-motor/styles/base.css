@@ -346,7 +346,6 @@ header {
 
 .summary .rental-item {
   margin: 0 auto 1rem auto;
-  width: 50%;
   color: var(--primary-color);
 }
 
@@ -392,8 +391,6 @@ footer div:nth-child(2) img {
 /* home footer style ends */
 
 /* rentals style starts */
-/* #264653 */
-/* linear-gradient(180deg, var(--e-global-color-063267a) 0, #1b7f72 100%); */
 .rental-banner {
   position: relative;
   width: 100%;
