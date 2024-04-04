@@ -38,4 +38,17 @@
   .summary .rental-item {
     max-width: 50%;
   }
+
+  .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .item ul li {
+    margin-left: 1rem;
+    list-style: initial;
+  }
 }

@@ -3,6 +3,7 @@
         {
             "name": "Honda Metro Scooter",
             "capacity": "1 Person",
+            "image": "images/honda-metropolitan-49cc.jpg",
             "specs": [
                 "Engine: 49cc liquid-cooled, single-cylinder",
                 "Power: 4.4 horsepower @ 8,000 RPM",
@@ -27,6 +28,13 @@
         {
             "name": "Honda Dio Scooter",
             "capacity": "2 Person",
+            "image": "images/honda-dio-110cc.jpg",
+            "specs": [
+                "Engine: 109cc, air-cooled, SOHC",
+                "Fuel System: PGM-Fi fuel-injection system",
+                "Power: 7.89 hp @ 7500 rpm",
+                "Torque: 8.91 Nm @ 5000 rpm3"
+            ],
             "reservation": [
                 {
                     "halfDay": "$30",
@@ -43,6 +51,12 @@
         {
             "name": "Honda PCX150 Scooter",
             "capacity": "2 Person",
+            "image": "images/honda-pcx150-white.png",
+            "specs": [
+                "Engine: 149cc liquid-cooled, single-cylinder SOHC",
+                "Power: 13.3hp @ 8,500rpm",
+                "Torque: 13.6Nm @ 6,500rpm4"
+            ],
             "reservation": [
                 {
                     "halfDay": "$40",
@@ -59,6 +73,13 @@
         {
             "name": "Honda Pioneer ATV",
             "capacity": "4 Person",
+            "image": "images/Pioneer_1000-3-r.jpg",
+            "specs": [
+                "Engine: 999cc liquid-cooled Unicam® longitudinally mounted parallel-twin four-stroke",
+                "Valve Train: OHC, four valves per cylinder",
+                "Bore x Stroke: 92.0mm x 75.15mm",
+                "Compression Ratio: 10:15"
+            ],
             "reservation": [
                 {
                     "halfDay": "$50",
@@ -75,6 +96,12 @@
         {
             "name": "Jeep Wrangler - 4 door with a/c",
             "capacity": "5 Person",
+            "image": "images/jeep-wrangler-4.jpg",
+            "specs": [
+                "Engine: 2.0-liter I4 DOHC DI Turbo eTorque engine",
+                "Power: 268 hp",
+                "Torque: 400 Nm6"
+            ],
             "reservation": [
                 {
                     "halfDay": "$70",
@@ -91,6 +118,12 @@
         {
             "name": "Jeep Wrangler - 2 door",
             "capacity": "4 Person",
+            "image": "images/jeep-wrangler-4.jpg",
+            "specs": [
+                "Engine: 2.0-liter I4 DOHC DI Turbo eTorque engine",
+                "Power: 268 hp",
+                "Torque: 400 Nm6"
+            ],
             "reservation": [
                 {
                     "halfDay": "$60",

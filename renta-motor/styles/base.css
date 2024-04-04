@@ -5,6 +5,7 @@
   --accent2: #000027;
   --accent3: #1f9787;
   --accent4: #edf2f7;
+  --font1: tahoma, sans-serif;
 }
 
 * {
@@ -12,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -394,7 +396,12 @@ footer div:nth-child(2) img {
 .rental-banner {
   position: relative;
   width: 100%;
-  background: linear-gradient(180deg, rgba(38, 70, 83, 0.5) 0, rgba(27, 127, 114, 0.5) 100%), url(../images/bikers.webp);
+  background: linear-gradient(
+      180deg,
+      rgba(38, 70, 83, 0.5) 0,
+      rgba(27, 127, 114, 0.5) 100%
+    ),
+    url(../images/bikers.webp);
   background-position: center;
   background-size: cover;
   height: 650px;
@@ -406,10 +413,67 @@ footer div:nth-child(2) img {
   text-align: center;
   font-weight: bold;
   font-size: 3.5rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--accent1);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+/* item */
+.items-container {
+  margin: 2rem 0;
+}
+
+.item {
+  padding: 0.5rem;
+  color: var(--accent);
+  border-bottom: 4px solid var(--secondary-color);
+}
+
+.item h2 {
+  text-align: center;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-family: var(--font1);
+}
+
+.item ul li {
+  padding: 0.5rem 0;
+  font-weight: bold;
+  border-bottom: 1px solid #dcdbdb;
+}
+/* pricing */
+.pricing {
+  margin-top: 1rem;
+}
+
+.pricing .reservation {
+  margin-bottom: 1rem;
+}
+
+.item div img {
+  width: 100%;
+}
+
+.item div a {
+  text-align: center;
+  display: block;
+  background-color: var(--secondary-color);
+  color: var(--accent1);
+  padding: 1.2rem;
+  font-weight: bold;
+  font-family: tahoma, sans-serif;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  width: 150px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.item div a:hover {
+  background-color: var(--accent2);
+  color: var(--secondary-color);
+  transition: all 0.25s ease-in-out;
 }
 /* rentals style ends */
