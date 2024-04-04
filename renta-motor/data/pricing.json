@@ -96,7 +96,7 @@
         {
             "name": "Jeep Wrangler - 4 door with a/c",
             "capacity": "5 Person",
-            "image": "images/jeep-wrangler-4.jpg",
+            "image": "images/jeep-wrangler-4.png",
             "specs": [
                 "Engine: 2.0-liter I4 DOHC DI Turbo eTorque engine",
                 "Power: 268 hp",
@@ -118,7 +118,7 @@
         {
             "name": "Jeep Wrangler - 2 door",
             "capacity": "4 Person",
-            "image": "images/jeep-wrangler-4.jpg",
+            "image": "images/jeep-wrangler-2.jpg",
             "specs": [
                 "Engine: 2.0-liter I4 DOHC DI Turbo eTorque engine",
                 "Power: 268 hp",
