@@ -1,89 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="James Cabasag Tubban">
-    <meta name="description" content="Scoots Rental offers top-notch scooters and diverse vehicles for all your travel needs. Experience seamless, affordable rentals. Start your journey with us today!">
-    <!--  Essential META Tags -->
-    <meta property="og:title" content="Renta Motor">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jtubban.github.io/wdd230/scoots/images/grand-harbour.webp">
-    <meta property="og:url" content="https://jtubban.github.io/wdd230/scoots/index.html">
-    <title>Renta Motor - Offering Quality Business Services</title>
-    <!-- styles here -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-</head>
-<body>
-    <header>
-        <div class="nav-width">
-            <div class="logo-wrapper">
-                <a href="index.html"><img src="images/renta-motor-logo.png" alt="Logo"></a>
-                <a href="index.html">
-                    <p class="business-title">Renta<br>Motor</p>
-                    <p class="location">Mexico</p>
-                </a>
-            </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="James Cabasag Tubban">
+		<meta name="description" content="Scoots Rental offers top-notch scooters and diverse vehicles for all your travel needs. Experience seamless, affordable rentals. Start your journey with us today!">
+		<!--  Essential META Tags -->
+		<meta property="og:title" content="Renta Motor">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://jtubban.github.io/wdd230/scoots/images/grand-harbour.webp">
+		<meta property="og:url" content="https://jtubban.github.io/wdd230/scoots/index.html">
+		<title>Renta Motor - Offering Quality Business Services</title>
+		<!-- styles here -->
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link rel="icon" href="favicon.ico">
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/base.css">
+		<link rel="stylesheet" href="styles/medium.css">
+	</head>
+	<body>
+		<div class="max-temp"></div>
+		<header>
+			<div class="nav-width">
+				<div class="logo-wrapper">
+					<a href="index.html"><img src="images/renta-motor-logo.png" alt="Logo"></a>
+					<a href="index.html">
+						<p class="business-title">Renta<br>Motor</p>
+						<p class="location">Cozumel</p>
+					</a>
+				</div>
 
-            <nav class="navigation">
-                <a href="index.html" class="active">Home</a>
-                <a href="rentals.html">Rentals</a>
-                <a href="reservations.html">Reservations</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+				<nav class="navigation">
+					<a href="index.html" class="active">Home</a>
+					<a href="rentals.html">Rentals</a>
+					<a href="reservations.html">Reservations</a>
+					<a href="contact.html">Contact</a>
+				</nav>
 
-            <div class="book-now">
-                <a href="#">BOOK NOW</a>
-            </div>
+				<div class="book-now">
+					<a href="#">BOOK NOW</a>
+				</div>
 
-            <!-- <button class="menu"></button> -->
-            <button class="hamburger is-active">
-                <div class="bar"></div>
-            </button>
-        </div>
-    </header>
+				<!-- <button class="menu"></button> -->
+				<button class="hamburger">
+					<div class="bar"></div>
+				</button>
+			</div>
+		</header>
 
-    <nav class="mobile-nav is-active">
-        <a href="index.html" class="active">Home</a>
-        <a href="rentals.html">Rentals</a>
-        <a href="reservations.html">Reservations</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+		<nav class="mobile-nav">
+			<a href="index.html" class="active">Home</a>
+			<a href="rentals.html">Rentals</a>
+			<a href="reservations.html">Reservations</a>
+			<a href="contact.html">Contact</a>
+		</nav>
 
-    <main>
-        <div class="hero-banner">
-            <picture class="hero-image">
-                <source media="(max-width: 400px)" srcset="images/hon-small.jpg">
-                <source media="(max-width: 768px)" srcset="images/hon-medium.jpg">
-                <img src="images/hon-large.jpg" alt="Honda Motor Image" loading="lazy">
-            </picture>
+		<main>
+			<div class="landing">
+				<div class="side-bar">
+					<div class="weather-details">
+						<!-- <h3>Weather</h3>
+							<div class="today-weather">
+								<img class="weatherIcon">                    
+								<p class="temperature">Temperature: 66&deg;F - <span class="desc">Cloudy</span></p>
+							</div>
+							<p class="humidity">Hummidity: 67</p> -->
 
-            <!-- <div class="hero-text">
-                <h1>Tuao Chamber of Commerce</h1>
-                <p>Join the Community!</p>
-                <a href="join.html" class="hero-btn">Join</a>
-            </div> -->
-        </div>
+						<!-- <div class="forecast">
+							<h4 class="oneday-forecast">One-Day Temperature Forecast</h4>
+							<p>Mon, Apr 1, 2024</p>
+						</div> -->
+					</div>
+				</div>
 
-        <div class="rental-types">
-            <h2>Our Bike And Car Rentals</h2>
+				<div class="content">
+					<h1>Your Parner in Rentals!</h1>
 
-            <div class="card">
-                <img src="img_avatar.png" alt="Card Image">
-                <div class="container">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer></footer>
-    
-    <!-- scripts here -->
-    <script src="scripts/main.js"></script>
-</body>
+					<div class="places">
+						<h2>Places to Visit</h2>
+						<div class="places-image">
+						<img src="images/place1.jpeg" alt="Place Image" />
+						<img src="images/place2.jpeg" alt="Place Image" />
+						<img src="images/place3.jpg" alt="Place Image" />
+						<img src="images/place4.jpg" alt="Place Image" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="rental-types">
+				<h2>Our Bike And Car Rentals</h2>
+
+				<div class="card-wrapper">
+					<div class="card">
+						<img src="images/honda-metropolitan-49cc.jpg" alt="Card Image" />
+						<div class="card-body">
+						<h4><b>Honda Metropolitan (49cc)</b></h4>
+						<p>Capacity: 1 person</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="images/honda-dio-110cc.jpg" alt="Card Image" />
+						<div class="card-body">
+						<h4><b>Honda Dio (110cc)</b></h4>
+						<p>Capacity: 2 person</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="images/honda-pcx150-white.png" alt="Card Image" />
+						<div class="card-body">
+						<h4><b>Honda PCX150 (149cc)</b></h4>
+						<p>Capacity: 2 person</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="images/Pioneer_1000-3-r.jpg" alt="Card Image" />
+						<div class="card-body">
+						<h4><b>Honda Pioneer 1000</b></h4>
+						<p>Capacity: 4 person</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="images/jeep-wrangler-2.jpg" alt="Card Image" />
+						<div class="card-body">
+						<h4><b>Jeep Wrangler - 2 door</b></h4>
+						<p>Capacity: 4 Person</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<img src="images/jeep-wrangler-4.png" alt="Card Image" />
+						<div class="card-body">
+						<h4><b>Jeep Wrangler - 4 door</b></h4>
+						<p>Capacity: 5 Person</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="summary">
+				<h2 class="summary-title">Rental Summary</h2>
+
+				<div class="rental-item">
+					<p class="vehicle-name">Honda Metro Scooter</p>
+					<p class="rental-info">This is a one-person scooter. The half-day rental price is $20 for reservations and $25 for walk-ins. The full-day rental price is $30 for reservations and $35 for walk-ins.</p>
+				</div>
+
+				<div class="rental-item">
+					<p class="vehicle-name">Honda Dio Scooter</p>
+					<p class="rental-info">This scooter can accommodate two people. The half-day rental price is $30 for reservations and $35 for walk-ins. The full-day rental price is $40 for reservations and $45 for walk-ins.</p>
+				</div>
+
+				<div class="rental-item">
+					<p class="vehicle-name">Honda PCX150 Scooter</p>
+					<p class="rental-info">This is also a two-person scooter. The half-day rental price is $40 for reservations and $45 for walk-ins. The full-day rental price is $50 for reservations and $55 for walk-ins.</p>
+				</div>
+
+				<div class="rental-item">
+					<p class="vehicle-name">Honda Pioneer ATV</p>
+					<p class="rental-info">This all-terrain vehicle can accommodate up to four people. The half-day rental price is $50 for reservations and $60 for walk-ins. The full-day rental price is $70 for reservations and $80 for walk-ins.</p>
+				</div>
+
+				<div class="rental-item">
+					<p class="vehicle-name">Jeep Wrangler (4 door with a/c)</p>
+					<p class="rental-info">This vehicle can accommodate up to five people. The half-day rental price is $70 for reservations and $85 for walk-ins. The full-day rental price is $100 for reservations and $125 for walk-ins.</p>
+				</div>
+
+				<div class="rental-item">
+					<p class="vehicle-name">Jeep Wrangler (2 door)</p>
+					<p class="rental-info">This vehicle can accommodate up to four people. The half-day rental price is $60 for reservations and $70 for walk-ins. The full-day rental price is $85 for reservations and $90 for walk-ins.</p>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="left">
+				<p>&copy; 2024 Renta Motor GOZUMEL | Designed by James Tubban</p>
+			</div>
+
+			<div class="right">
+				<a href="https://www.facebook.com/koa24" target="_blank"><img src="images/facebook.png" alt="facebook image"></a>
+				<a href="https://www.instagram.com/tubban_james/" target="_blank"><img src="images/instagram.png" alt="instagram image"></a>
+				<a href="https://twitter.com/tubban_james" target="_blank"><img src="images/twitter.png" alt="twitter image"></a>
+			</div>
+		</footer>
+
+		<!-- scripts here -->
+		<script src="scripts/main.js"></script>
+		<script src="scripts/weather.js"></script>
+	</body>
 </html>

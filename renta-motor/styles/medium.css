@@ -1,14 +1,23 @@
 @media screen and (max-width: 992px) {
-  .nav-width {
-    min-width: 100%;
-  }
-
   .book-now {
     display: none;
+  }
+
+  .card-wrapper {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 992px) {
+
+
+  .landing {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    height: 109vh;
+    gap: 1rem;
+  }
+
   .mobile-nav {
     display: none;
   }
@@ -19,5 +28,12 @@
 
   .navigation a {
     display: block;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 }
