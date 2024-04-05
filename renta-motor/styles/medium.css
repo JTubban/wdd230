@@ -51,4 +51,18 @@
     margin-left: 1rem;
     list-style: initial;
   }
+
+  .requirements-reservations-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    max-width: 85%;
+    margin: auto;
+  }
+
+  .requirements ul li {
+    list-style: disc;
+    margin-left: 1rem;
+    font-size: .9rem;
+  }
 }

@@ -9,7 +9,7 @@
 		<meta property="og:type" content="website">
 		<meta property="og:image" content="https://jtubban.github.io/wdd230/scoots/images/grand-harbour.webp">
 		<meta property="og:url" content="https://jtubban.github.io/wdd230/scoots/index.html">
-		<title>Renta Motor - Offering Quality Business Services</title>
+		<title>RESERVATIONS - Reserve now to avail discounts!</title>
 		<!-- styles here -->
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 		<link rel="icon" href="favicon.ico">
@@ -36,7 +36,7 @@
 				</nav>
 
 				<div class="book-now">
-					<a href="#">BOOK NOW</a>
+					<a href="reservations.html">BOOK NOW</a>
 				</div>
 
 				<!-- <button class="menu"></button> -->
@@ -52,6 +52,105 @@
 			<a href="reservations.html">Reservations</a>
 			<a href="contact.html">Contact</a>
 		</nav>
+
+		<main>
+			<div class="reservation-banner">
+				<h1>Requirements and Reservations</h1>
+			</div>
+
+			<div class="requirements-reservations-container">
+				<section class="requirements">
+					<h2>Rental Requirements</h2>
+					<ul>
+						<li>A $50 security deposit is required to confirm reservations.</li>
+						<li>A valid drivers license is required in hand at the time of rental.</li>
+						<li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+						<li>Fuel charge is not included.</li>
+						<li>Unlimited mileage.</li>
+						<li>Liability insurance is included.</li>
+						<li>Damage insurance is available for purchase.</li>
+						<li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+						<li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+						<li>Rentals may be returned to either physical location.</li>
+					</ul>
+				</section>
+
+				<section class="reservation">
+						<h2>Enter Your Information</h3>
+
+						<form action="book.html" method="get" class="book">
+							<fieldset>
+								<legend>Personal Information</legend>
+
+								<label>
+									First Name<span class="required">*</span>
+									<input type="text" name="fname" id="fname" required>
+								</label>
+
+								<label>
+									Last Name<span class="required">*</span>
+									<input type="text" name="lname" id="lname" required>
+								</label>
+
+								<label>
+									Phone Number<span class="required">*</span>
+									<input type="tel" name="phone" id="phone" placeholder="+528884520646" required>
+								</label>
+
+								<label>
+									Email<span class="required">*</span>
+									<input type="email" name="email" id="email" placeholder="example@email.com" required>
+								</label>
+
+								<label>
+									Country<span class="required">*</span>
+									<input type="text" name="country" id="country" placeholder="Mexico" required>
+								</label>
+							</fieldset>
+
+							<fieldset>
+								<legend>Rental Details</legend>
+
+								<label>
+									Rental Type<span class="required">*</span>
+									<select name="rental-type" id="rental-type" required>
+										<option value="">Please Select &#9662;</option>
+										<option value="Half Day">Half Day</option>
+										<option value="Full Day">Full Day</option>
+									</select>
+								</label>
+
+								<label>
+									Pickup Date<span class="required">*</span>
+									<input type="date" name="pickup" id="pickup" required>
+								</label>
+
+								<label>
+									Pickup Time<span class="required">*</span>
+									<input type="text" name="pickup-time" id="pickup-time" placeholder="8:30 AM" required>
+								</label>
+
+								<label>
+									Return Date<span class="required">*</span>
+									<input type="date" name="return-date" id="return-date" required>
+								</label>
+
+								<label>
+									Return Time<span class="required">*</span>
+									<input type="text" name="return-time" id="return-time" placeholder="8:30 AM" required>
+								</label>
+
+								<label>
+									Sugguestions
+									<textarea name="desc" id="desc" cols="40" rows="5"></textarea>
+								</label>
+							</fieldset>
+
+							<input type="submit" value="Book">
+						</form>
+				</section>
+			</div>
+		</main>
         
         <footer>
 			<div class="left">
