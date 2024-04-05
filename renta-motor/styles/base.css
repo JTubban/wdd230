@@ -681,5 +681,29 @@ footer div:nth-child(2) img {
 /* contact style ends */
 
 /* success and contacting us styles */
+.booked, .thankyou {
+	width: 50%;
+	min-width: 400px;
+	margin: 5rem auto;
+	height: 200px;
+	position: relative;
+	border: 1px solid #ddd;
+	border-radius: 0 0 6px 6px;
+}
 
+.booked h4, .thankyou h4 {
+	text-align: center;
+	background-color: var(--secondary-color);
+	color: var(--accent1);
+	padding: .5rem;
+}
+
+.booked p, .thankyou p {
+	font-weight: bold;
+	color: var(--accent2);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate( -50%, -50% );
+}
 /* success and contacting us ends */
