@@ -212,7 +212,44 @@ header {
 /* main style starts */
 .side-bar {
 	background-color: rgba(0, 0, 0, 0.5);
-	padding: 0.5rem;
+	padding: 0 .5rem;
+	overflow: hidden;
+}
+
+.weather-details {
+	height: 100%;
+	max-height: 200px;
+	text-align: center;
+	background-color: var(--accent4);
+	/* background-color: rgba(0,0,0,0.7); */
+	/* color: var(--accent1); */
+	color: var(--primary-color);
+	padding-bottom: 1rem;
+	border-radius: 6px;
+	margin-top: 1rem;
+}
+
+.weather-details div.today-weather {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: -0.5rem;
+}
+
+.weather-details h3, .advertisement h3 {
+	text-align: center;
+	padding: 1rem;
+	text-decoration: underline var(--secondary-color);
+	color: var(--secondary-color);
+}
+
+.weather-details h4 {
+	margin-top: 1rem;
+	color: var(--secondary-color);
+}
+.weather-details img {
+	width: 50px !important;
 }
 
 .weather-details {
@@ -227,27 +264,30 @@ header {
 	border-radius: 6px;
 }
 
-.weather-details div.today-weather {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: -0.5rem;
+.weather-details p {
+	font-weight: bold;
 }
 
-.weather-details h3 {
-	text-align: center;
-	padding: 1rem;
-	text-decoration: underline var(--secondary-color);
-	color: var(--secondary-color);
+.advertisement {
+	background-color: var(--accent4);
+	color: var(--primary-color);
+	border-radius: 6px;
+	margin: 1rem 0;
+	padding: 0 1rem .5rem 1rem;
+
 }
 
-.weather-details h4 {
-	margin-top: 1rem;
-	color: var(--secondary-color);
+.advertisement p {
+	margin-bottom: .5rem;
+	font-weight: bold;
+	font-size: .9rem;
 }
-.weather-details img {
-	width: 50px !important;
+
+.advertisement p span {
+	font-weight: bold;
+	font-size: 1.1rem;
+	display: block;
+	color: var(--secondary-color);
 }
 
 .landing {
@@ -595,7 +635,7 @@ footer div:nth-child(2) img {
 /* reservations and agreements style ends */
 
 /* contact style starts */
-.contact > h1, p {
+.contact h1, .contact p {
 	text-align: center;
 	color: var(--accent2);
 }
